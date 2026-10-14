@@ -1,15 +1,15 @@
-package com.geekbrains.stopwatch
+package com.tlenparty.stopwatch
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.geekbrains.stopwatch.data.TimestampProvider
-import com.geekbrains.stopwatch.data.TimestampProviderImpl
-import com.geekbrains.stopwatch.data.calculates.ElapsedTimeCalculator
-import com.geekbrains.stopwatch.data.calculates.StopwatchStateCalculator
-import com.geekbrains.stopwatch.databinding.ActivityMainBinding
-import com.geekbrains.stopwatch.viewmodels.StopwatchStateHolder
-import com.geekbrains.stopwatch.viewmodels.StopwatchViewModel
-import com.geekbrains.stopwatch.viewmodels.StopwatchViewModelFactory
+import com.tlenparty.stopwatch.data.TimestampProvider
+import com.tlenparty.stopwatch.data.TimestampProviderImpl
+import com.tlenparty.stopwatch.data.calculates.ElapsedTimeCalculator
+import com.tlenparty.stopwatch.data.calculates.StopwatchStateCalculator
+import com.tlenparty.stopwatch.databinding.ActivityMainBinding
+import com.tlenparty.stopwatch.viewmodels.StopwatchStateHolder
+import com.tlenparty.stopwatch.viewmodels.StopwatchViewModel
+import com.tlenparty.stopwatch.viewmodels.StopwatchViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 

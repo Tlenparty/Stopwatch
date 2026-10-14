@@ -1,9 +1,9 @@
-package com.geekbrains.stopwatch.viewmodels
+package com.tlenparty.stopwatch.viewmodels
 
-import com.geekbrains.stopwatch.data.calculates.ElapsedTimeCalculator
-import com.geekbrains.stopwatch.data.calculates.StopwatchStateCalculator
-import com.geekbrains.stopwatch.helpers.extension.toStringTime
-import com.geekbrains.stopwatch.states.StopwatchState
+import com.tlenparty.stopwatch.data.calculates.ElapsedTimeCalculator
+import com.tlenparty.stopwatch.data.calculates.StopwatchStateCalculator
+import com.tlenparty.stopwatch.helpers.extension.toStringTime
+import com.tlenparty.stopwatch.states.StopwatchState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 

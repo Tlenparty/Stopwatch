@@ -1,4 +1,4 @@
-package com.geekbrains.stopwatch.helpers.extension
+package com.tlenparty.stopwatch.helpers.extension
 
 fun Long.toStringTime(): String {
     val millisecondsFormatted = (this % 1000).pad(3)

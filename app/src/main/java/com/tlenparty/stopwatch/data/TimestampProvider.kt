@@ -1,4 +1,4 @@
-package com.geekbrains.stopwatch.data
+package com.tlenparty.stopwatch.data
 
 interface TimestampProvider {
     fun getMilliseconds():Long

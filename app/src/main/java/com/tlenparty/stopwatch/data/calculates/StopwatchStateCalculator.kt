@@ -1,7 +1,7 @@
-package com.geekbrains.stopwatch.data.calculates
+package com.tlenparty.stopwatch.data.calculates
 
-import com.geekbrains.stopwatch.data.TimestampProvider
-import com.geekbrains.stopwatch.states.StopwatchState
+import com.tlenparty.stopwatch.data.TimestampProvider
+import com.tlenparty.stopwatch.states.StopwatchState
 
 class StopwatchStateCalculator(
     private val timestampProvider: TimestampProvider,

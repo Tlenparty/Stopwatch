@@ -1,4 +1,4 @@
-package com.geekbrains.stopwatch.states
+package com.tlenparty.stopwatch.states
 
 sealed class StopwatchState {
 

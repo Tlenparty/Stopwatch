@@ -1,9 +1,9 @@
-package com.geekbrains.stopwatch.viewmodels
+package com.tlenparty.stopwatch.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.geekbrains.stopwatch.helpers.extension.DEFAULT_MS_FORMATTED
+import com.tlenparty.stopwatch.helpers.extension.DEFAULT_MS_FORMATTED
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.collect
 

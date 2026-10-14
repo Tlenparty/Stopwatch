@@ -1,4 +1,4 @@
-package com.geekbrains.stopwatch.viewmodels
+package com.tlenparty.stopwatch.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

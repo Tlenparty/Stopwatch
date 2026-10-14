@@ -1,4 +1,4 @@
-package com.geekbrains.stopwatch
+package com.tlenparty.stopwatch
 
 import org.junit.Test
 
