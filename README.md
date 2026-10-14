@@ -1,39 +1,39 @@
 # Stopwatch
 
-Android-приложение «Секундомер» с двумя независимыми таймерами. Логика разделена
-на слои по принципам чистой архитектуры: расчёт состояния и прошедшего времени
-вынесен из UI, экран работает через ViewModel и LiveData, обновление времени —
-на корутинах.
+An Android "Stopwatch" app with two independent timers. The logic is split
+into layers following clean architecture principles: state and elapsed-time calculation
+are separated from the UI, the screen works through a ViewModel and LiveData, and time updates
+run on coroutines.
 
-## Возможности
+## Features
 
-- Два независимых секундомера на одном экране
-- Старт, пауза и сброс для каждого таймера
-- Отображение времени в формате `мм:сс:мс` (при превышении часа — `чч:мм:сс`)
+- Two independent stopwatches on one screen
+- Start, pause and reset for each timer
+- Time displayed as `mm:ss:ms` (`hh:mm:ss` once it exceeds an hour)
 
-## Стек
+## Tech stack
 
-| Область        | Технологии                              |
+| Area           | Technologies                            |
 |----------------|-----------------------------------------|
-| Язык           | Kotlin                                  |
-| Архитектура    | MVVM (ViewModel, LiveData)              |
-| Асинхронность  | Kotlin Coroutines, Flow                 |
+| Language       | Kotlin                                  |
+| Architecture   | MVVM (ViewModel, LiveData)              |
+| Concurrency    | Kotlin Coroutines, Flow                 |
 | UI             | ViewBinding, ConstraintLayout, Material |
 
-## Структура
+## Project structure
 
 ```
 app/src/main/java/com/tlenparty/stopwatch/
 ├── MainActivity.kt
-├── data/            # источник времени, калькуляторы состояния и прошедшего времени
-├── helpers/         # форматирование времени
+├── data/            # time source, state and elapsed-time calculators
+├── helpers/         # time formatting
 ├── states/          # StopwatchState: Running / Paused
-└── viewmodels/      # StopwatchViewModel, фабрика, StopwatchStateHolder
+└── viewmodels/      # StopwatchViewModel, factory, StopwatchStateHolder
 ```
 
-## Сборка
+## Build
 
-Требуется JDK 11–17 и Android SDK 31.
+Requires JDK 11–17 and Android SDK 31.
 
 ```bash
 ./gradlew assembleDebug
